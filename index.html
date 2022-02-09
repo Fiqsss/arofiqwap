@@ -52,7 +52,7 @@
     <section class="jumbotron text-center">
       <img src="img/DSC06576 (3).jpg" alt="Nur Muhammad Arofiq" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Nur Muhammad Arofiq</h1>
-      <p class="lead">Photografer | Programmer</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -65,21 +65,21 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container" data-aos="fade-in">
+      <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>
-              Hi! my name is Arofiq. I am 23 years old, I was born in Pati Central Java (Indonesia) and moved to South Tangerang, I moved to South Tangerang while continuing my studies and also work . I currently work as a warehouse
-              operator in PT.Smartfren, videographer, photographer and photo editor in South Tangerang(BSD).
-            </p>
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>Hi! my name is Arofiq. I am 23 years old, I was born in Pati Central Java (Indonesia) and moved to South Tangerang, I moved to South Tangerang while continuing my studies and also work .</p>
           </div>
-          <div class="col-md-4">
-            <p>apart from liking photography,traveling. i am also love designing websites, and i am looking for more opportunities to work in a freelance basis</p>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <p>
+              I currently work as a warehouse operator in PT.Smartfren, videographer, photographer and photo editor in South Tangerang(BSD). apart from liking photography,traveling. i am also love designing websites, and i am looking for
+              more opportunities to work in a freelance basis
+            </p>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
 
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="Gallery/1.jpg" class="card-img-top" alt="Gallery 1" />
               <div class="card-body">
                 <p class="card-text">PIC 1</p>
@@ -113,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="Gallery/2.jpg" class="card-img-top" alt="Gallery 2" />
               <div class="card-body">
                 <p class="card-text">PIC 2</p>
@@ -121,7 +121,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="Gallery/3.jpg" class="card-img-top" alt="Gallery 3" />
               <div class="card-body">
                 <p class="card-text">PIC 3</p>
@@ -129,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="Gallery/4.jpg" class="card-img-top" alt="Gallery 4" />
               <div class="card-body">
                 <p class="card-text">PIC 4</p>
@@ -137,7 +137,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="Gallery/5.jpg" class="card-img-top" alt="Gallery 5" />
               <div class="card-body">
                 <p class="card-text">PIC 5</p>
@@ -145,7 +145,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
               <img src="Gallery/6.jpg" class="card-img-top" alt="Gallery 6" />
               <div class="card-body">
                 <p class="card-text">PIC 6</p>
@@ -218,6 +218,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Photografer | Programmer' });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'bounce' });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0 });
+      gsap.from('.display-4', { duration: 1, x: 50, opacity: 0 });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
